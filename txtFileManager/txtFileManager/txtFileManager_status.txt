@@ -1,0 +1,22 @@
+***FUNCTION STATUS
+• createfile(filename, [directory])
+	STATUS: VALID
+	IMPROVEMENT: line132, Making the parameter directory go up n numbers of directories, not only one
+
+• deletefile(filename, [directory])
+	STATUS: VALID
+	IMPROVEMENT: same as the improvement above, a function for going a up directories should be made
+
+• encryptfile()
+
+• decryptfile()
+
+• writeline(filename, [directory, text, line_number])
+
+• appendline(filename, [directory, text])
+
+• findline(filename, [directory, text])
+
+• deleteline(filename, [directory, line_number]
+
+• findfile(filename) 
