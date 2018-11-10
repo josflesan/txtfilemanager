@@ -1,0 +1,22 @@
+***FUNCTION STATUS
+• createfile(filename, [directory])
+	STATUS: VALID
+	IMPROVEMENT: 
+
+• deletefile(filename, [directory])
+	STATUS: VALID
+	IMPROVEMENT: 
+
+• encryptfile()
+
+• decryptfile()
+
+• writeline(filename, [directory, text, line_number])
+
+• appendline(filename, [directory, text])
+
+• findline(filename, [directory, text])
+
+• deleteline(filename, [directory, line_number]
+
+• findfile(filename) 
