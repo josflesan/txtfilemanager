@@ -44,6 +44,8 @@ def help():
     \nfindfile(filename) : function which searches for a specified file in the cwd and returns its 
     full path if it is found (as a string).
     
+    \nreadline(filename, [directory, line_number]) :
+    
     \n**********************************************************
     ''')
 
