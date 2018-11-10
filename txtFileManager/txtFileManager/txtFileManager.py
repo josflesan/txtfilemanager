@@ -59,7 +59,7 @@ def createfile(filename, directory=""):
     '''
 
     # Check to see if user requests to go back
-    # ¿Any more efficient way you guys can think of doing this?
+    # ¿Any more efficient way you guys can think of doing this? - Yes, check implementation
     if directory[:2] == "..":
         os.chdir("..")
         directory = directory[2:]
