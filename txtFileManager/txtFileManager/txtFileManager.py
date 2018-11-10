@@ -59,10 +59,7 @@ def createfile(filename, directory=""):
     '''
 
     # Check to see if user requests to go back
-    # ¿Any more efficient way you guys can think of doing this? - Yes, check implementation
-    if directory[:2] == "..":
-        os.chdir("..")
-        directory = directory[2:]
+    directory = climb_directory(directory)
 
     # Change directory
     origdirectory = os.getcwd()
@@ -89,10 +86,7 @@ def deletefile(filename, directory=""):
     :param directory: string representing the name of the directory in which the file is stored
     '''
     # Check to see if user requests to go back
-    # ¿Any more efficient way you guys can think of doing this?
-    if directory[:2] == "..":
-        os.chdir("..")
-        directory = directory[2:]
+    directory = climb_directory(directory)
 
     # Change directory
     origdirectory = os.getcwd()
@@ -107,6 +101,18 @@ def deletefile(filename, directory=""):
         os.chdir(origdirectory)
         print("\nFinished")
 
+
+def climb_directory(directory):
+    if directory[:2] == "..":
+        climbs = len(directory)
+        string_parameter = "." * climbs
+        if directory[:climbs] == string_parameter:
+            for jumps in range(climbs - 1):
+                os.chdir("..")
+                directory = directory[2:]
+            return directory
+    else:
+        pass
 
 def encryptfile():
     pass
@@ -129,10 +135,7 @@ def writeline(filename, directory="", text="", line_number=0):
     :param line_number: integer representing line number to be edited within the file
     '''
     # Check to see if user requests to go back
-    # ¿Any more efficient way you guys can think of doing this?
-    if directory[:2] == "..":
-        os.chdir("..")
-        directory = directory[2:]
+    directory = climb_directory(directory)
 
     # Change directory
     origdirectory = os.getcwd()
@@ -175,10 +178,7 @@ def appendline(filename, directory="", text=""):
     :param text: string representing the new line of text to be added
     '''
     # Check to see if user requests to go back
-    # ¿Any more efficient way you guys can think of doing this?
-    if directory[:2] == "..":
-        os.chdir("..")
-        directory = directory[2:]
+    directory = climb_directory(directory)
 
     # Change directory
     origdirectory = os.getcwd()
@@ -225,9 +225,7 @@ def findline(filename, directory="", text=""):
 
     # Check to see if user requests to go back
     # ¿Any more efficient way you guys can think of doing this?
-    if directory[:2] == "..":
-        os.chdir("..")
-        directory = directory[2:]
+    directory = climb_directory(directory)
 
     # Change directory
     origdirectory = os.getcwd()
@@ -266,9 +264,7 @@ def deleteline(filename, directory="", line_number=1):
 
     # Check to see if user requests to go back
     # ¿Any more efficient way you guys can think of doing this?
-    if directory[:2] == "..":
-        os.chdir("..")
-        directory = directory[2:]
+    directory = climb_directory(directory)
 
     # Change directory
     origdirectory = os.getcwd()
