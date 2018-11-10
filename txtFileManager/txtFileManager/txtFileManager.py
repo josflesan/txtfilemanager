@@ -115,6 +115,11 @@ def climb_directory(directory):
         pass
 
 def encryptfile():
+    # FILE LEGNTH LINE
+    # LOOP FOR EACH LINE
+    # ENCRYPT LINE
+    # REWRITE IN TEMP FILE
+    # CHANGE NAME OF OLD FILE TO NEW FILE
     pass
 
 
