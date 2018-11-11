@@ -310,6 +310,11 @@ def findfile(filename):
 
 help()
 
+@contextmanager
+def readline(filename, directory="", text=0):
+    pass
+
+
 # Data Testing Function
 def menu():
     print('''
