@@ -1,4 +1,0 @@
-To do:
-
-1. Work on encryption and decryption module
-2. Fix README
