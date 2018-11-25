@@ -1,6 +1,6 @@
 # txtFileManager.py module
 # Module used to manipulate text files
-# Coded by Xavier, Alejandro and Josué
+# Coded by Lemur
 
 from contextlib import contextmanager  # https://docs.python.org/2/library/contextlib.html
 import os  # https://docs.python.org/2/library/os.html
