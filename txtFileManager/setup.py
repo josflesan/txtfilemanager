@@ -8,10 +8,10 @@ setuptools.setup(
     version="0.0.1",
     author="Lemur",
     author_email="author@example.com",
-    description="A small example package",
+    description="Allow the easy manipulation of text files.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/Alejandro202/txtfilemanager",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
