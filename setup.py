@@ -6,12 +6,12 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="txtFileManager",
     version="0.0.1",
-    author="Lemur",
-    author_email="author@example.com",
+    author="Lemurer",
+    author_email="lemurercompany@gmail.com",
     description="Allow the easy manipulation of text files.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Alejandro202/txtfilemanager",
+    url="https://github.com/Alestiago/txtfilemanager",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
