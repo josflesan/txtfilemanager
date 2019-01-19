@@ -1,10 +1,8 @@
-import setuptools
+from setuptools import setup
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
 
-setuptools.setup(
-    name="txtFileManager",
+setup(
+    name="txtfilemanager",
     version="0.0.1",
     author="Lemurer",
     author_email="lemurercompany@gmail.com",
@@ -12,6 +10,8 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Alestiago/txtfilemanager",
+    py_modules=["txtfilemanager"],
+    package_dir={"":"src"},
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
